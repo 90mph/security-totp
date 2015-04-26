@@ -1,16 +1,27 @@
 {
-  "name": "totp",
+  "name": "easy-totp",
   "version": "1.0.0",
-  "description": "topt based google authenticator ",
-  "main": "index.js",
+  "description": "Provides easy integration for one time password (TOTP) with google authenticator",
+  "main": "easy-totp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dev",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "totp",
     "google",
-    "authenticator"
-  ]
+    "authenticator",
+	"two factor authentication",
+	"one time password"
+  ],
+  "dependencies" :
+  {
+  "rfc-3548-b32" : "latest",
+	"speakeasy" : "latest"
+	},
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/90mph/security-totp.git"
+  }
 }
